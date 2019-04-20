@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20190420143109) do
   create_table "tracker_locations", force: :cascade do |t|
     t.decimal "latitude", precision: 10, scale: 6
     t.decimal "longitude", precision: 10, scale: 6
-    t.decimal "battery_level", precision: 3, scale: 2
+    t.decimal "battery_level", precision: 5, scale: 2
     t.json "transmission_payload"
     t.bigint "tracker_id"
     t.datetime "created_at", null: false
