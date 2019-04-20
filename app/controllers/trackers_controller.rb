@@ -11,8 +11,7 @@ class TrackersController < ApplicationController
     if @tracker
       response = response_json(response: @tracker)
     else
-      message = "Couldn't find tracker with eui #{tracker_eui}"
-      response = response_json(success: false, message: message)
+      response = not_found_response(id: tracker_eui)
     end
 
     render json: response
@@ -40,8 +39,7 @@ class TrackersController < ApplicationController
       @tracker.destroy
       response = response_json(response: { deleted_eui: tracker_eui })
     else
-      message = "Couldn't find tracker with eui #{tracker_eui}"
-      response = response_json(success: false, message: message)
+      response = not_found_response(id: tracker_eui)
     end
 
     render json: response
