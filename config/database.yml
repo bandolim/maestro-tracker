@@ -13,4 +13,4 @@ test:
 
 production:
   <<: *default
-  database: maestro_tracker
+  url: <%= ENV['DATABASE_URL'] %>
