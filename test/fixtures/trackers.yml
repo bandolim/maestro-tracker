@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipment_name: MyString
+  serial_number: MyString
+  tracker_eui: MyString
+
+two:
+  equipment_name: MyString
+  serial_number: MyString
+  tracker_eui: MyString

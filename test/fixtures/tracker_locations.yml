@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: MyString
+  longitude: MyString
+  battery_level: 9.99
+  transmission_payload: 
+  tracker: one
+
+two:
+  latitude: MyString
+  longitude: MyString
+  battery_level: 9.99
+  transmission_payload: 
+  tracker: two
